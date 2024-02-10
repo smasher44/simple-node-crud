@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 const app = express();
 const port = 3000;
@@ -13,6 +14,9 @@ let items = [
 
 // Middleware to parse JSON in the request body
 app.use(bodyParser.json());
+
+// Use the cors middleware
+app.use(cors());
 
 // Routes
 
