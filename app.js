@@ -7,13 +7,6 @@ const port = 3000;
 
 const items = require('./data');
 
-// Sample data (temporary storage)
-// let items = [
-//   { id: 1, name: 'Item 1' },
-//   { id: 2, name: 'Item 2' },
-//   { id: 3, name: 'Item 3' },
-// ];
-
 // Middleware to parse JSON in the request body
 app.use(bodyParser.json());
 
